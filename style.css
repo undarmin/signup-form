@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+}
+
+.sidebar {
+    height: 100vh;
+    background-image: url(./assets/sidebar.jpg);
+    background-size: 100vh;
+    aspect-ratio: 9/10;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.info-text {
+    box-sizing: border-box;
+    padding: 0 2rem;
+    text-align: center;
+    font-size: 24px;
+}
