@@ -8,6 +8,25 @@
     --accent-color: #2c92ff;
     --accent-color-2: #40376E;
     --accent-color-3: #ff1212;
+
+    --LOGO-color: rgba(20, 20, 20, 0.5);
+}
+
+.logo-text {
+    width: 100%;
+    background: var(--LOGO-color);
+    height: 10rem;
+    margin-top: 25%;
+    text-align: center;
+    font-size: 4rem;
+    color: var(--secondary-bg);
+    display: flex;
+    align-items: center;
+}
+
+.logo-text p {
+    width: 100%;
+    font-family: 'Cabin', sans-serif;
 }
 
 .color {
