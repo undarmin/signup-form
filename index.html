@@ -1,24 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SpaceChat</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div class="sidebar">
-        <img src="./assets/sidebar.jpg" alt="" height="1px">
+      <img src="./assets/sidebar.jpg" alt="" height="1px" />
     </div>
     <main>
-        <h1 class="info-text">Space Chat, a platform to chat with your friends
-            family, and others. This is what we wish <em>we</em> had in the
-            90s.
-        </h1>
-        <form action="example.net"></form>
+      <h1 class="info-text">
+        Space Chat, a platform to chat with your friends family, and others.
+        This is what we wish <em>we</em> had in the 90s.
+      </h1>
+      <form action="example.net">
+        <h2>Let's do this!</h2>
+        <div class="form-data">
+          <div class="col-1">
+            <div><label for="firstname">First Name:</label></div>
+            <input type="text" id="firstname" name="firstname" />
+            <div><label for="email">Email: </label></div>
+            <input type="email" name="email" id="email">
+            <div><label for="password">Password: </label></div>
+            <input type="password" name="password" id="password">
+          </div>
+          <div class="col-2">
+            <div><label for="lastname">Last Name:</label></div>
+            <input type="text" id="lastname" name="lastname" />
+            <div><label for="number">Phone Number: </label></div>
+            <input type="tel" name="number" id="number">
+            <div><label for="cpassword">Confirm Password: </label></div>
+            <input type="password" name="cpassword" id="cpassword">
+          </div>
+        </div>
+      </form>
     </main>
-</body>
+  </body>
 </html>
