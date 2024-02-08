@@ -5,7 +5,17 @@
     --primary-clr: #1c1121;
     --secondary-clr: #303030;
 
-    --accent-color: #3D7068;
+    --accent-color: #2c92ff;
+    --accent-color-2: #40376E;
+    --accent-color-3: #ff1212;
+}
+
+.color {
+    color: var(--accent-color);
+}
+
+form p {
+    margin: 0.125rem 4rem;
 }
 
 * {
@@ -34,7 +44,7 @@ main {
     background-color: var(--primary-bg);
     color: var(--primary-clr);
     flex-direction: column;
-    gap: 2rem;
+    gap: 3rem;
 }
 
 .info-text {
@@ -47,11 +57,16 @@ main {
 /* form styling */
 
 form {
+    width: 100%;
+}
+
+.form {
     background-color: var(--secondary-bg);
     box-sizing: border-box;
     width: 100%;
     padding: 2rem;
     text-align: center;
+    box-shadow: 0 0 0.25rem black;
 }
 
 label {
@@ -84,10 +99,41 @@ input {
     margin-bottom: 0.5rem;
     border: 1.2px solid var(--primary-clr);
     border-radius: 0.4rem;
+    outline: none;
+}
+
+input:focus, input:invalid {
+    box-shadow: 0 0     1px black;
 }
 
 input:focus {
-    outline: none;
     border-color: var(--accent-color);
-    box-shadow: 0 0 3px black;
+}
+
+input:invalid {
+    border-color: var(--accent-color-3)
+}
+
+.submit-button {
+    padding: 12px;
+    font-size: 1.2rem;
+    background: var(--accent-color-2);
+    border: none;
+    border-radius: 0.5rem;
+    color: var(--primary-bg);
+    font-weight: bold;
+    margin: 1.5rem 4rem;
+    width: 35%
+}
+
+.submit-button:hover {
+    filter: saturate(200%) hue-rotate(-15deg);
+}
+
+.submit-button:active {
+    filter: saturate(150%) hue-rotate(-30deg);
+}
+
+label::before {
+    content: "*";
 }
