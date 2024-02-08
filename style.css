@@ -1,7 +1,17 @@
+:root {
+    --font-main: 'Poppins', sans-serif;
+    --primary-bg: #efefef;
+    --secondary-bg: white;
+    --primary-clr: #1c1121;
+    --secondary-clr: #303030;
+
+    --accent-color: #3D7068;
+}
+
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-main);
 }
 
 body {
@@ -21,11 +31,63 @@ main {
     justify-content: center;
     align-items: center;
     flex: 1;
+    background-color: var(--primary-bg);
+    color: var(--primary-clr);
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .info-text {
     box-sizing: border-box;
     padding: 0 2rem;
     text-align: center;
-    font-size: 24px;
+    font-size: 1.5rem;
+}
+
+/* form styling */
+
+form {
+    background-color: var(--secondary-bg);
+    box-sizing: border-box;
+    width: 100%;
+    padding: 2rem;
+    text-align: center;
+}
+
+label {
+    font-size: 0.8rem;
+    letter-spacing: 0.2ch;
+    text-align: left;
+    display: block;
+    text-transform: uppercase;
+}
+
+.form-data {
+    display: flex;
+    gap: 1rem;
+    box-sizing: border-box;
+    padding: 0 0.5rem;
+}
+
+form h2 {
+    font-size: 1.25rem;
+    text-align: left;
+    color: var(--secondary-clr);
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+input {
+    width: 16rem;
+    height: 2rem;
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+    border: 1.2px solid var(--primary-clr);
+    border-radius: 0.4rem;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 3px black;
 }
